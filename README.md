@@ -51,7 +51,7 @@ Docker apps are built in a certain way. We start with *containers*. Above this l
 
 The images that make a runtime are defined in the *Dockerfile*, which says exactly what should go on inside the environment in the container. Access to resources like networking interfaces or disk drives is virtualized and isolated from the rest of your system, so you need to map ports to the outside world. You also need to be specific about what files from your system you would like copied into the container.
 
-We can build a new image from a base image with the docker build command like this (`-t` gives the image a name tag, and the `.` means use the Dockerfile. The version tag is automatically set to `latest`):
+We can build a new image from a base image with the docker build command like this (`-t` gives the image a name tag, and the `.` means use the Dockerfile). The version tag is automatically set to `latest`
 
 `$ docker build -t friendlyhello .`
 
